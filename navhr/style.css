@@ -21,6 +21,8 @@
 {
     color: #1e87f0;
 }
-
-
+.odkazvmenu li a span
+{
+    padding-right: 5px; 
+}
 /*menu*/
