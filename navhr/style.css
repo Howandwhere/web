@@ -1,1 +1,5 @@
-Jako vidím to stejně snad to poorbí 
+.odkazvmenu li:hover
+{
+    border-radius: 5%;
+    border: solid rgba(255,255,255,0.8)
+}
