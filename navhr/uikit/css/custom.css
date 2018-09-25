@@ -56,16 +56,19 @@
     {
         display: block;
     }
+    /*důvod proč se objeví seznam objeví pod sebou*******/
     .uk-accordion-title::before , .uk-open>.uk-accordion-title::before
     {
         background:none;
         display: none;
     }
+/*Skrýv plusko + dává pryč mezeru******/
     .menuuprostred
 {
     position: relative;
     left: calc(50% - 15px)
-}
+} 
+/*zaručuje aby ||| bylo vždy na středu*/
     
 }
 @media (min-width: 700px)
@@ -74,5 +77,6 @@
     {
         display: block!important;
     }
+/**/
 }
 /*menu resposibilita*/
