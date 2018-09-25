@@ -43,5 +43,17 @@
     {
         display: block;
     }
+    .uk-navbar-nav
+    {
+        display: block;
+    }
+    
+}
+@media (min-width: 700px)
+{
+    .uk-hidden, [hidden]
+    {
+        display: block!important;
+    }
 }
 /*menu resposibilita*/

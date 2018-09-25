@@ -26,25 +26,21 @@
 <body>
     <nav class="uk-navbar-container uk-margin sedacara "uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" uk-navbar="mode: click">
         <div class="uk-navbar-center">
-                <span class="ikonamenu" uk-icon="icon: menu" > </span>
-    
-                <ul class="ikonamenu uk-navbar-nav " >
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            
-                        </li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+                <ul uk-accordion>
+                    <li>
+                    <a class="uk-accordion-title ikonamenu"><svg class="ikonamenu" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <rect x="2" y="4" width="16" height="1"></rect> <rect x="2" y="9" width="16" height="1"></rect> <rect x="2" y="14" width="16" height="1"></rect></svg></a>
+                
 
-
+                    <div class="uk-accordion-content">
             <ul class="uk-navbar-nav odkazvmenu">
                 <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
                 <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
                 <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
                 <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
+            </li>
             </ul>
-    
+                    </div>
+                </ul>
         </div>
   </nav>
     <!--Konec menu-->
