@@ -1,0 +1,47 @@
+/*menu*/
+@keyframes animacemenuhover {
+    from {border: 1px solid #f8f8f8;}
+    to {border: 1px solid #1e87f0;}
+}
+
+.odkazvmenu li a
+{
+    border-radius: 5%;
+    border: 1px solid #f8f8f8;
+}
+
+.odkazvmenu li a:hover
+{
+    border-radius: 5%;
+    border: 1px solid #1e87f0;
+    animation-name: animacemenuhover;
+    animation-duration: .8s;
+}
+.odkazvmenu li a:hover span
+{
+    color: #1e87f0;
+}
+.odkazvmenu li a span
+{
+    padding-right: 5px; 
+}
+.sedacara
+{
+    border-top: #f8f8f8 solid 1px;
+}
+/*menu*/
+/*@media (min-width: 600px) {
+    body {background-color: yellow;}
+}*/
+.ikonamenu
+{
+    display: none;
+}
+@media (max-width: 700px)
+{
+    .ikonamenu
+    {
+        display: block;
+    }
+}
+/*menu resposibilita*/
