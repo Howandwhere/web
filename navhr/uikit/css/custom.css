@@ -29,6 +29,15 @@
 {
     border-top: #f8f8f8 solid 1px;
 }
+.pismovmenu
+{
+    font-size: 12px;
+}
+.menuuprostred
+{
+    position: relative;
+    left: calc(50% - 15px)
+}
 /*menu*/
 /*@media (min-width: 600px) {
     body {background-color: yellow;}
@@ -47,6 +56,16 @@
     {
         display: block;
     }
+    .uk-accordion-title::before , .uk-open>.uk-accordion-title::before
+    {
+        background:none;
+        display: none;
+    }
+    .menuuprostred
+{
+    position: relative;
+    left: calc(50% - 15px)
+}
     
 }
 @media (min-width: 700px)
