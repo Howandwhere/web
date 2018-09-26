@@ -25,19 +25,12 @@
 {
     padding-right: 5px; 
 }
+/*Ikony  menu*/
 .sedacara
 {
     border-top: #f8f8f8 solid 1px;
 }
-.pismovmenu
-{
-    font-size: 12px;
-}
-.menuuprostred
-{
-    position: relative;
-    left: calc(50% - 15px)
-}
+
 /*menu*/
 /*@media (min-width: 600px) {
     body {background-color: yellow;}
@@ -51,6 +44,7 @@
     .ikonamenu
     {
         display: block;
+        padding-top: 10px;;
     }
     .uk-navbar-nav
     {
@@ -62,6 +56,7 @@
         background:none;
         display: none;
     }
+
 /*Skrýv plusko + dává pryč mezeru******/
     .menuuprostred
 {
@@ -69,7 +64,10 @@
     left: calc(50% - 15px)
 } 
 /*zaručuje aby ||| bylo vždy na středu*/
-    
+.odkazvmenu li a{
+    min-height: 35px;
+}
+
 }
 @media (min-width: 700px)
 {
@@ -78,5 +76,7 @@
         display: block!important;
     }
 /**/
+
 }
+
 /*menu resposibilita*/
