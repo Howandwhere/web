@@ -30,7 +30,11 @@
 {
     border-top: #f8f8f8 solid 1px;
 }
-
+.logo
+{
+    position: relative;
+    top: 32px; 
+}
 /*menu*/
 /*@media (min-width: 600px) {
     body {background-color: yellow;}
@@ -44,7 +48,8 @@
     .ikonamenu
     {
         display: block;
-        padding-top: 10px;;
+        padding-top: 10px;
+        
     }
     .uk-navbar-nav
     {
@@ -66,6 +71,11 @@
 /*zaručuje aby ||| bylo vždy na středu*/
 .odkazvmenu li a{
     min-height: 35px;
+}
+.resposibilitasloupce
+{
+    box-sizing: none;
+    width: 100%
 }
 
 }
