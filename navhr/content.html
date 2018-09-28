@@ -1,78 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-   
 
     <!-- link to uikit css -->
-   
+    <link rel="stylesheet" href="css/uikit.min.css" />
 
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
-    
     <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 
-     <!-- link to custom css -->
-     <link rel="stylesheet" type="text/css"  href="uikit/css/custom.css">
+    <!-- link to custom css -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <title>Document</title>
 </head>
-<body>
-        
-    <nav class="uk-navbar-container uk-margin sedacara "uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" uk-navbar="mode: click">
-        <div class="uk-navbar-center">
-                
-            <ul uk-accordion>
-                    <li>
-                        
-                    <a class="uk-accordion-title ikonamenu "><svg class="ikonamenu menuuprostred" width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <rect x="2" y="4" width="16" height="1"></rect> <rect x="2" y="9" width="16" height="1"></rect> <rect x="2" y="14" width="16" height="1"></rect></svg></a>
-                         
 
-                    <div class="uk-accordion-content">
-                    <ul class="uk-navbar-nav odkazvmenu">
-                        <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
-                        <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
-                        <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
-                        <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
-                    </li>
-                    </ul>
+<body>
+
+    <nav class="uk-navbar-container uk-margin sedacara" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar"
+        uk-navbar="mode: click">
+        <div class="uk-navbar-center">
+
+            <ul uk-accordion class="menu">
+                <li>
+
+                    <a class="uk-accordion-title ikonamenu ">
+                        Menu
+                        <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span>
+
+                    </a>
+
+
+                    <div class="uk-accordion-content menu" >
+                        <ul class="uk-navbar-nav odkazvmenu">
+                            <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
+                            <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
+                            <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
+                            <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
+                        </ul>
                     </div>
-                </ul>
+            </ul>
         </div>
-  </nav>
+    </nav>
     <!--Konec menu-->
     <div class="uk-block uk-block-primary ">
-            <div class="uk-container uk-container-center uk-margin-small-top uk-margin-large-bottom">
-                    <div class="uk-text-center" uk-grid >
-                            <div class="uk-width-1-5 resposibilitasloupce">
-                                <div class="uk-card uk-card-default uk-card-body">
-                                    3-4
+        <div class="uk-container uk-container-center uk-margin-small-top uk-margin-large-bottom">
+            <div class="uk-text-center" uk-grid>
+                <div class="uk-width-1-5 resposibilitasloupce">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        3-4
 
 
-                                </div>
-                            </div>
-                            <div class="uk-width-4-5 resposibilitasloupce">
-                                <div class="uk-card uk-card-default uk-card-body">
-                                    1-4
+                    </div>
+                </div>
+                <div class="uk-width-4-5 resposibilitasloupce">
+                    <div class="uk-card uk-card-default uk-card-body">
 
 
-                                </div>
-                            </div>
-                            
-                        </div>
+
+
+
+                    </div>
+                </div>
+
             </div>
-        </div>   
+        </div>
+    </div>
 
 
-    
+    <ul uk-accordion>
+        <li>
+            <a class="uk-accordion-title" href="#">
+                Menu
+                <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span>
+            </a>
+            <div class="uk-accordion-content">
+                <ul class="uk-navbar-nav odkazvmenu">
+                    <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
+                    <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
+                    <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
+                    <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
 
-    
+    <ul uk-accordion>
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">
+                Menu
+                <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span></a>
+            <div class="uk-accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+
+
 
 </body>
+
 </html>
