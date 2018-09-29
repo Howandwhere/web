@@ -1,0 +1,47 @@
+#menu .uk-navbar-nav /*Otočení seznamu vertikálně*/{
+    display: block;
+}
+#menu li a span /*Menu ikonky že jsou fajnově daleko ;)*/ {
+    padding-right: 7px;
+}
+#menu .uk-inline/*protoze je tento framework debilní tak jsem musel opravit to co nedokážou opravit,, kdyby to tu nebylo tak by to vypadalo fakt na picu ;) */{
+    display: block;
+}
+#menu .uk-overlay /*logo*/{
+    background: none;
+    margin: 0;
+    padding-left: 5px;
+}
+#menu .uk-accordion-title::before , .uk-open>.uk-accordion-title::before /*Skrýv plusko + dává pryč mezeru******/{
+    background:none;
+    display: none;
+}
+@keyframes animacemenuhover /*animace hover efektu*/{
+    from {
+        border: 1px solid #f8f8f8;
+    }
+    to {
+        border: 1px solid #1e87f0;
+    }
+}
+#menu ul li a /*pridaní cary co se memí pro hoveru*/{
+    border-radius: 5%;
+    border: 1px solid #f8f8f8;
+    min-height: 30px;
+}
+
+#menu ul li a:hover/*hvr*/ {
+    border-radius: 5%;
+    border: 1px solid #1e87f0;
+    animation-name: animacemenuhover;
+    animation-duration: .8s;
+}
+
+#menu ul li a:hover span /*ikonka modroucka*/{
+    color: #1e87f0;
+}
+#menu .uk-accordion-content /*Vylepšení paddingu*/ {
+    padding: 0;
+    margin-top: 0;
+}
+
