@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 
 <head>
     <meta charset="UTF-8">
@@ -14,97 +14,158 @@
     <script src="js/uikit-icons.min.js"></script>
 
     <!-- link to custom css -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="testovacicssbomidoslinervicky.css">
+    <style>
 
-    <title>Document</title>
+    </style>
+
+    <title>Menu more</title>
 </head>
 
 <body>
+    <!--Začátek menu-->
+    <div id="menu">
+        <div class="uk-inline">
+            <nav class="uk-navbar uk-navbar-container uk-margin">
+                <div class="uk-navbar-center">
+                    <!--Toogle = Taková to ikonka-->
+                    <ul uk-accordion>
+                        <li>
 
-    <nav class="uk-navbar-container uk-margin sedacara" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar"
-        uk-navbar="mode: click">
-        <div class="uk-navbar-center">
+                            <a class="uk-accordion-title">
+                                <div class="uk-navbar-toggle" href="#">
+                                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                                </div>
+                            </a>
 
-            <ul uk-accordion class="menu">
-                <li>
-
-                    <a class="uk-accordion-title ikonamenu ">
-                        Menu
-                        <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span>
-
-                    </a>
-
-
-                    <div class="uk-accordion-content menu" >
-                        <ul class="uk-navbar-nav odkazvmenu">
-                            <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
-                            <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
-                            <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
-                            <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
-                        </ul>
-                    </div>
-            </ul>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
+                                    <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
+                                    <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
+                                    <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="uk-position-small uk-position-top-left uk-overlay uk-overlay-default">How&Where</div>
         </div>
-    </nav>
+    </div>
     <!--Konec menu-->
-    <div class="uk-block uk-block-primary ">
-        <div class="uk-container uk-container-center uk-margin-small-top uk-margin-large-bottom">
-            <div class="uk-text-center" uk-grid>
-                <div class="uk-width-1-5 resposibilitasloupce">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        3-4
 
-
+    <div id="content">
+        <div class="uk-text-center" uk-grid>
+            <!--Začátek sidebaru-->
+            <div class="uk-width-auto sidebar">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <ul class="uk-list osnova">
+                        <b class=""></b>
+                        <li><a href="#mainnadpis" class="uk-text-uppercase" uk-scroll>Main</a></li>
+                        <li><a href="#nadpis2" uk-scroll>nadpis</a></li>
+                        <li><a href="#nadpis3" uk-scroll>nadpis</a></li>
+                        <li><a href="#nadpis4" class="uk-text-small" uk-scroll>Podnadpis</a></li>
+                        <hr>
+                    </ul>
+                    <div class="mainclanek doporucenyclanek">
+                        <h2>Nadpis hlavního tebou vybraného članku</h2>
+                        <div style="width: 100%; height: 153px; border:1px solid black;">img</div>
+                        Text mainclanku - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris tincidunt
+                        sem sed arcu.
+                        Praesent id justo in neque elementum ultrices.
+                        <hr>
+                    </div>
+                    <div class="vedclanek doporucenyclanek">
+                        <h3>Nadpis vedlejsiho članku</h3>
+                        <div style="width: 100%; height: 153px; border:1px solid black;">img</div>
+                        Text vedlejsihoclanku - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+                        tincidunt
+                        sem sed arcu.
+                        Praesent id justo in neque elementum ultrices.
+                        <hr>
+                    </div>
+                    <div class="vedclanek doporucenyclanek">
+                        <h3>Nadpis vedlejsiho članku</h3>
+                        <div style="width: 100%; height: 153px; border:1px solid black;">img</div>
+                        Text vedlejsihoclanku - Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+                        tincidunt
+                        sem sed arcu.
+                        Praesent id justo in neque elementum ultrices.
+                        <hr>
                     </div>
                 </div>
-                <div class="uk-width-4-5 resposibilitasloupce">
-                    <div class="uk-card uk-card-default uk-card-body">
+            </div>
+            <!--Začátek contentbaru-->
+            <div class="uk-width-expand">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h1><a id="mainnadpis" class="uk-heading-primary uk-h1">Lorem ipsum </a></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris tincidunt sem sed arcu.
+                        Praesent id justo in neque elementum ultrices. Morbi leo mi, nonummy eget tristique non,
+                        rhoncus non leo. Fusce aliquam vestibulum ipsum. Phasellus et lorem id felis nonummy placerat.
+                        Cras elementum. Etiam posuere lacus quis dolor. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos hymenaeos. Aliquam ante. Aenean fermentum risus id tortor.
+                        Nullam faucibus mi quis velit. Nullam feugiat, turpis at pulvinar vulputate, erat libero
+                        tristique tellus, nec bibendum odio risus sit amet ante. Fusce tellus odio, dapibus id
+                        fermentum quis, suscipit id erat. Sed elit dui, pellentesque a, faucibus vel, interdum nec,
+                        diam. Duis risus. Suspendisse sagittis ultrices augue. Duis pulvinar.</p>
+                    <h1><a id="nadpis2">Lorem ipsum </a></h1>
 
+                    <p>Etiam neque. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Aenean
+                        placerat. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Quisque
+                        porta. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Mauris suscipit,
+                        ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
+                        Etiam dictum tincidunt diam. Integer pellentesque quam vel velit. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Etiam dictum tincidunt diam. Integer
+                        lacinia. Mauris dictum facilisis augue. Nam quis nulla. Nullam justo enim, consectetuer nec,
+                        ullamcorper ac, vestibulum in, elit. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos hymenaeos. Duis pulvinar.</p>
+                    <h1><a id="nadpis2">Lorem ipsum </a></h1>
+                    <p>Aliquam ante. Proin in tellus sit amet nibh dignissim sagittis. Vestibulum erat nulla,
+                        ullamcorper nec, rutrum non, nonummy ac, erat. Aliquam ornare wisi eu metus. Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo. Nullam eget nisl. Donec quis nibh at felis congue commodo. Proin in
+                        tellus sit amet nibh dignissim sagittis. Vivamus luctus egestas leo. Etiam egestas wisi a erat.
+                        Aliquam id dolor. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo.
+                        Donec vitae arcu. Fusce wisi. Integer tempor. Aliquam erat volutpat. In enim a arcu imperdiet
+                        malesuada.</p>
+                    <h1><a id="nadpis3">Lorem ipsum </a></h1>
+                    <p>Aliquam erat volutpat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                        dolore magnam aliquam quaerat voluptatem. Proin in tellus sit amet nibh dignissim sagittis.
+                        Pellentesque ipsum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Aliquam id
+                        dolor. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Curabitur vitae diam
+                        non enim vestibulum interdum. Aliquam erat volutpat. Nullam eget nisl. Donec vitae arcu. Sed
+                        elit dui, pellentesque a, faucibus vel, interdum nec, diam. Mauris dolor felis, sagittis at,
+                        luctus sed, aliquam non, tellus.</p>
+                    <h1><a id="nadpis4">Lorem ipsum </a></h1>
+                    <p>Duis risus. Pellentesque sapien. Nunc auctor. Proin pede metus, vulputate nec, fermentum
+                        fringilla, vehicula vitae, justo. Sed convallis magna eu sem. Nulla accumsan, elit sit amet
+                        varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Aliquam erat
+                        volutpat. Aliquam erat volutpat. Nulla turpis magna, cursus sit amet, suscipit a, interdum id,
+                        felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                        hymenaeos. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Integer tempor. Aliquam erat volutpat. Vestibulum erat nulla, ullamcorper nec,
+                        rutrum non, nonummy ac, erat. Curabitur sagittis hendrerit ante. Mauris elementum mauris vitae
+                        tortor. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
 
-
-
-
-                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-    <ul uk-accordion>
-        <li>
-            <a class="uk-accordion-title" href="#">
-                Menu
-                <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span>
-            </a>
-            <div class="uk-accordion-content">
-                <ul class="uk-navbar-nav odkazvmenu">
-                    <li class="uk-active"><a href="#"><span uk-icon="icon: home"> </span>&nbsp;Home</a></li>
-                    <li><a href="#"><span uk-icon="icon: question"> </span>&nbsp;Jak</a></li>
-                    <li><a href="#"><span uk-icon="icon: location"> </span>&nbsp;Kam</a></li>
-                    <li><a href="#"><span uk-icon="icon: youtube"> </span>&nbsp;Co dělat po cestě</a></li>
-                </ul>
+    <div id="footer">
+        <div class="uk-text-center" uk-grid>
+            <div class="uk-width-1-1">
+                <div class="uk-card uk-card-secondary">Tento web používá UIkit | O autorech | Kontakt | Podmínky užití udájů | O webu</div>
             </div>
-        </li>
-    </ul>
-
-    <ul uk-accordion>
-        <li class="uk-open">
-            <a class="uk-accordion-title" href="#">
-                Menu
-                <span class="menuuprostred" uk-icon="icon: menu; ratio: 2"></span></a>
-            <div class="uk-accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </li>
-    </ul>
-
-
-
-
-
-
+        </div>
+    </div>
 
 </body>
 

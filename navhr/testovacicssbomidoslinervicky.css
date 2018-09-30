@@ -44,6 +44,13 @@
     padding: 0;
     margin-top: 0;
 }
+#content .osnova{
+    display: none;
+}
+#content .vedclanek
+{
+    display: none
+}
 
 @media (min-width: 700px)
 {
@@ -73,4 +80,28 @@
     #menu ul/*margin - pak to prostě vypadá better :)*/{
         margin: 5px;
     }
+    #content .sidebar .uk-card
+    {
+        display: block;
+        min-width: 350px;
+        max-width: 350px;
+        margin-left: 40px
+    }  
+    
+    #content .osnova{
+        display: block;
+    }
+    #content .uk-width-expand{
+        margin-right: 40px
+    }
+    #content .vedclanek
+{
+    display: block
+}
+#footer{
+    margin-right:40px;
+    margin-left:40px;
+    margin-top: 20px ;
+    margin-bottom: 5px;
+}
 }
