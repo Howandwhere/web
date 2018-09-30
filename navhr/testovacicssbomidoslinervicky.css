@@ -1,22 +1,46 @@
-#menu .uk-navbar-nav /*Otočení seznamu vertikálně*/{
+#menu .uk-navbar-nav
+/*Otočení seznamu vertikálně*/
+
+    {
     display: block;
 }
-#menu li a span /*Menu ikonky že jsou fajnově daleko ;)*/ {
+
+#menu li a span
+/*Menu ikonky že jsou fajnově daleko ;)*/
+
+    {
     padding-right: 7px;
 }
-#menu .uk-inline/*protoze je tento framework debilní tak jsem musel opravit to co nedokážou opravit,, kdyby to tu nebylo tak by to vypadalo fakt na picu ;) */{
+
+#menu .uk-inline
+/*protoze je tento framework debilní tak jsem musel opravit to co nedokážou opravit,, kdyby to tu nebylo tak by to vypadalo fakt na picu ;) */
+
+    {
     display: block;
 }
-#menu .uk-overlay /*logo*/{
+
+#menu .uk-overlay
+/*logo*/
+
+    {
     background: none;
     margin: 0;
     padding-left: 5px;
 }
-#menu .uk-accordion-title::before , .uk-open>.uk-accordion-title::before /*Skrýv plusko + dává pryč mezeru******/{
-    background:none;
+
+#menu .uk-accordion-title::before,
+.uk-open>.uk-accordion-title::before
+/*Skrýv plusko + dává pryč mezeru******/
+
+    {
+    background: none;
     display: none;
 }
-@keyframes animacemenuhover /*animace hover efektu*/{
+
+@keyframes animacemenuhover
+/*animace hover efektu*/
+
+    {
     from {
         border: 1px solid #f8f8f8;
     }
@@ -24,84 +48,94 @@
         border: 1px solid #1e87f0;
     }
 }
-#menu ul li a /*pridaní cary co se memí pro hoveru*/{
+
+#menu ul li a
+/*pridaní cary co se memí pro hoveru*/
+
+    {
     border-radius: 5px;
     border: 1px solid #f8f8f8;
     min-height: 30px;
 }
 
-#menu ul li a:hover/*hvr*/ {
+#menu ul li a:hover
+/*hvr*/
+
+    {
     border-radius: 5px;
     border: 1px solid #1e87f0;
     animation-name: animacemenuhover;
     animation-duration: .8s;
 }
 
-#menu ul li a:hover span /*ikonka modroucka*/{
+#menu ul li a:hover span
+/*ikonka modroucka*/
+
+    {
     color: #1e87f0;
 }
-#menu .uk-accordion-content /*Vylepšení paddingu*/ {
+
+#menu .uk-accordion-content
+/*Vylepšení paddingu*/
+
+    {
     padding: 0;
     margin-top: 0;
 }
-#content .osnova{
-    display: none;
-}
-#content .vedclanek
-{
+#content .vedclanek {
     display: none
 }
 
-@media (min-width: 700px)
-{
-    #menu .uk-navbar-nav /*Otočení seznamu vertikálně*/{
+@media (min-width: 700px) {
+    #menu .uk-navbar-nav/*Otočení seznamu vertikálně*/
+        {
         display: flex;
     }
-    #menu .uk-accordion-title /*daní do píči ||| menu*/{
+    #menu .uk-accordion-title/*daní do píči ||| menu*/
+        {
         display: none;
     }
-    #menu .uk-accordion-content /*přeskupení seznamu na požadovanou pycoviny*/{
-        display: block!important;
+    #menu .uk-accordion-content/*přeskupení seznamu na požadovanou pycoviny*/
+        {
+        display: block !important;
     }
-    #menu .uk-navbar-nav li a /*Vylepšení paddingu*/ {
+    #menu .uk-navbar-nav li a/*Vylepšení paddingu*/
+        {
         margin-top: 0;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
         min-height: 80px;
     }
-    #menu .uk-overlay /*logo*/{
+    #menu .uk-overlay/*logo*/
+        {
         background: none;
         margin: 0;
         padding-left: 10px;
         padding-top: 31px;
         font-size: 1.5em;
     }
-    #menu ul/*margin - pak to prostě vypadá better :)*/{
+    #menu ul/*margin - pak to prostě vypadá better :)*/
+        {
         margin: 5px;
     }
-    #content .sidebar .uk-card
-    {
+    #content .sidebar .uk-card {
         display: block;
         min-width: 350px;
         max-width: 350px;
         margin-left: 40px
-    }  
-    
-    #content .osnova{
-        display: block;
     }
-    #content .uk-width-expand{
+  
+    #content .uk-width-expand {
         margin-right: 40px
     }
-    #content .vedclanek
-{
-    display: block
-}
-#footer{
-    margin-right:40px;
-    margin-left:40px;
-    margin-top: 20px ;
-    margin-bottom: 5px;
-}
+    #content .vedclanek {
+        display: block
+    }
+    #footer {
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
 }
